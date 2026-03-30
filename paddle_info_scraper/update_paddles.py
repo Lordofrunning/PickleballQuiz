@@ -147,6 +147,13 @@ for block_id in records["block"].keys():
         "brand": props.get("o{Nq", [[""]])[0][0] if "o{Nq" in props else "",
         "model": props.get("{S<Z", [[""]])[0][0] if "{S<Z" in props else "",
         "price": props.get("`R^P", [[""]])[0][0] if "`R^P" in props else "",
+        "weight": props.get("C{vB", [[""]])[0][0] if "C{vB" in props else "",
+        "core_thickness_mm": props.get("bEnc", [[""]])[0][0] if "bEnc" in props else "",
+        "grip_length": props.get("fSUz", [[""]])[0][0] if "fSUz" in props else "",
+        "rpm": props.get("kKLs", [[""]])[0][0] if "kKLs" in props else "",
+        "shape": props.get("RLTk", [[""]])[0][0] if "RLTk" in props else "",
+        "face_material": props.get("Sk;V", [[""]])[0][0] if "Sk;V" in props else "",
+        "core_material": props.get("lvSm", [[""]])[0][0] if "lvSm" in props else "",
         "swing_weight": props.get("Lfds", [[""]])[0][0] if "Lfds" in props else "",
         "twist_weight": props.get("KmOn", [[""]])[0][0] if "KmOn" in props else ""
     }
@@ -159,7 +166,7 @@ print("Paddles found:", len(paddles))
 with open("paddles.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(
         f,
-        fieldnames=["brand","model","price","swing_weight","twist_weight"]
+        fieldnames=["brand","model","price","weight","core_thickness_mm","grip_length","rpm","shape","face_material","core_material","swing_weight","twist_weight"]
     )
     writer.writeheader()
     writer.writerows(paddles)
