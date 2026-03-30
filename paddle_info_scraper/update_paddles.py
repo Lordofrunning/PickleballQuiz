@@ -5,7 +5,17 @@ import json
 url = "https://thepickleballstudio.notion.site/api/v3/queryCollection?src=initial_load"
 
 # Authentication cookies from browser session
-# Get these from: DevTools > Network > queryCollection request > Headers > Cookie
+# NOTE: Cookies will expire! If script fails, extract fresh cookies:
+# 1. Open https://thepickleballstudio.notion.site in your browser
+# 2. Press F12 > Network tab
+# 3. Scroll down on the page to trigger a queryCollection request
+# 4. Find the request "queryCollection" in Network tab
+# 5. Click it > Headers section > scroll down to "Cookie" header
+# 6. Copy the cookie values and update NOTION_COOKIES below with:
+#    - notion_browser_id
+#    - device_id  
+#    - notion_check_cookie_consent
+# 7. Save and run the script again
 NOTION_COOKIES = {
     "notion_browser_id": "a1220f43-7128-4266-ae7b-5a43608f1928",
     "device_id": "332d872b-594c-81f8-8bd6-003b6bec109f",
@@ -166,7 +176,7 @@ print("Paddles found:", len(paddles))
 with open("paddles.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(
         f,
-        fieldnames=["brand","model","price","weight","core_thickness_mm","grip_length","rpm","shape","face_material","core_material","swing_weight","twist_weight"]
+        fieldnames=["brand","model","price","weight","core_thickness_mm","grip_length","rpm","shape","face_material","core_material","swing_weight","twist_weight","year"]
     )
     writer.writeheader()
     writer.writerows(paddles)
