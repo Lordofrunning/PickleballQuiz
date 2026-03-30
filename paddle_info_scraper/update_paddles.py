@@ -13,18 +13,42 @@ NOTION_COOKIES = {
 }
 
 payload = {
+    "clientType": "notion_app",
     "collectionView": {
         "id": "15aa3cef-c76a-80b9-b4ba-000c2df1ede5",
-        "spaceId": ""
+        "spaceId": "506f2e06-5b8c-449b-8da1-caa63bc40912"
     },
-    "collectionViewBlock": {
-        "id": "5bdf3ee7-52c9-40eb-a864-a81bc3281164",
-        "spaceId": ""
+    "source": {
+        "type": "collection",
+        "id": "3c5f9880-81b2-4ace-b83c-46374c8281c0",
+        "spaceId": "506f2e06-5b8c-449b-8da1-caa63bc40912"
     },
-    "clientType": "notion_app",
-    "isFullScreen": True,
-    "isMobile": False,
-    "userTimeZone": "America/Denver"
+    "loader": {
+        "userTimeZone": "America/Denver",
+        "archiveStatus": "NON_ARCHIVED",
+        "searchQuery": "",
+        "sort": [
+            {
+                "property": "o{Nq",
+                "direction": "ascending"
+            }
+        ],
+        "propertyAggregations": [
+            {
+                "type": "aggregation",
+                "aggregation": {
+                    "property": "title",
+                    "aggregator": "count"
+                }
+            }
+        ],
+        "reducers": {
+            "collection_group_results": {
+                "type": "results",
+                "limit": 50
+            }
+        }
+    }
 }
 
 headers = {
@@ -35,19 +59,35 @@ headers = {
     "referer": "https://thepickleballstudio.notion.site/5bdf3ee752c940eba864a81bc3281164?v=15aa3cefc76a80b9b4ba000c2df1ede5"
 }
 
-print("Fetching all paddles (with pagination)...")
+print("Fetching all paddles (incrementally loading)...")
 
-all_paddles = []
 all_records = {"block": {}, "__version__": 3}
-offset = 0
+current_limit = 50
 page = 1
 
 while True:
-    # Create payload for this page with offset
-    current_payload = payload.copy()
-    current_payload["offset"] = offset
+    print(f"  Fetching with limit {current_limit}...")
     
-    print(f"  Fetching page {page} (offset {offset})...")
+    # Update limit in payload for this request
+    current_payload = {
+        "clientType": payload["clientType"],
+        "collectionView": payload["collectionView"],
+        "source": payload["source"],
+        "loader": {
+            "userTimeZone": payload["loader"]["userTimeZone"],
+            "archiveStatus": payload["loader"]["archiveStatus"],
+            "searchQuery": payload["loader"]["searchQuery"],
+            "sort": payload["loader"]["sort"],
+            "propertyAggregations": payload["loader"]["propertyAggregations"],
+            "reducers": {
+                "collection_group_results": {
+                    "type": "results",
+                    "limit": current_limit
+                }
+            }
+        }
+    }
+    
     r = requests.post(url, json=current_payload, headers=headers, cookies=NOTION_COOKIES)
     
     if r.status_code != 200:
@@ -57,29 +97,33 @@ while True:
     data = r.json()
     
     if "recordMap" not in data or "block" not in data["recordMap"]:
-        print(f"ERROR: No data on page {page}")
+        print(f"ERROR: No data at limit {current_limit}")
         break
     
     # Merge records
-    all_records["block"].update(data["recordMap"]["block"])
+    new_blocks = data["recordMap"]["block"]
+    all_records["block"].update(new_blocks)
     
-    # Get block IDs for this page
+    # Get result info
     block_ids = []
+    has_more = False
     if "result" in data and "reducerResults" in data["result"]:
         reducer_results = data["result"]["reducerResults"]
         if "collection_group_results" in reducer_results:
             collection_results = reducer_results["collection_group_results"]
             block_ids = collection_results.get("blockIds", [])
             has_more = collection_results.get("hasMore", False)
-            print(f"    Got {len(block_ids)} paddles, hasMore={has_more}")
+    
+    print(f"    Got {len(new_blocks)} blocks, blockIds count={len(block_ids)}, total blocks={len(all_records['block'])}, hasMore={has_more}")
     
     if not has_more or not block_ids:
+        print("    No more results")
         break
     
     page += 1
-    offset += 50
-    if page > 15:  # Safety limit (15 * 50 = 750 paddles)
-        print("Reached page limit, stopping")
+    current_limit += 50  # Increase limit by 50 each time
+    if current_limit > 1000:  # Safety limit
+        print("Reached max limit, stopping")
         break
 
 records = all_records

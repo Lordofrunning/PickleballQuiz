@@ -1,22 +1,447 @@
 brand,model,price,swing_weight,twist_weight
 11six24,Vapor Power2,209.99,111,6.67
-Volair,Shift HYB 14mm,189.99,118.4,6.49
-Volair,Shift EL 14mm,189.99,120.4,6
-Volair,Shift WB 14mm,189.99,107.7,7.21
-Spartus,P1,219,117.09,6.51
-RPM,Friction pro elongated 16,249.99,116.18,6
-RPM,Friction pro widebody 16,249.99,109.77,6.96
-RPM,Friction pro elongated 14,249.99,114.94,5.87
+11six24,Alpha Pro Power Hurache-X,199,113.57,6.14
+11six24,Alpha Pro Power Pegasus,199,106.6,7.12
+11six24,Alpha Pro Power Vapor,199,109.08,6.48
+11six24,Power Hurache-X 16mm,169.99,117,6.25
+11six24,Power Vapor 16mm,169.99,113,6.74
+11six24,Power Pegasus 16mm,169.99,107,7.21
+11six24,All Court Hurache-X 16mm,139.99,118,6.21
+11six24,All Court Vapor 16mm,139.9,117,6.76
+11six24,Jelly Bean Hurache-X 16mm,99.99,115,6.03
+11six24,Jelly Bean Vapor 16mm,99.99,114,6.7
+11six24,All Court Pegasus 16mm,139.99,114,7.22
+11six24,Jelly Bean Pegasus 16mm,99.99,112,7.29
+11six24,Jelly Bean Pegasus 14mm,99.99,109,6.91
+Adidas,Adipower pro 14,189,123,6.38
+Adidas,Adipower pro 16 c,189,118.69,7.01
+Adidas,Adipower pro 16,189,126.21,6.22
+Adidas,Metalbone 14.5,229,109,4.94
+Adidas,Metalbone LP 16mm,249.99,120,5.42
+Adidas,Metalbone LP Team,209,112,4.93
+Adidas,Metalbone LP S,249.99,116,5.22
+Adidas,Metalbone,259.99,116,5.62
+Adidas,AdiPower CTRL,199.99,111,6.82
+Adidas,Adipower Carbon Team,159.99,116,5.72
+Adidas,AdiPower Attk 2,199.99,116,6.00
+Adidas,Match Light 2,69.99,96,6.68
+Adidas,Drive 2,69.99,105,7.11
+Aiso,Centric 16mm,99.99,118,6.27
+Avoura,Rivelle,199,111,6.08
+Avoura,Revaya,199,111,5.43
+Avoura,Rhapsody 13mm,225,105,7.18
+Babolat,Strikr+,219,121,6.26
+Babolat,Ballr+,219,111,6
+Babolat,Wzrd,219,108,6.38
+Ballr,Ballr Pro,99.99,126,6.18
+Body Helix,FLIK F1,190,115.75,6
+Body Helix,X4 Carbon,140,116,6.54
+Body Helix,X4 Kevlar,140,115,6.52
+Body Helix,X5,140,116,7.23
+Body Helix,X1,160,122,6.85
+Bread & Butter,Loco Widebody,199,110,7.34
+Bread & Butter,Loco Hybrid,199,112.05,6.52
+Bread & Butter,Loco Widebody,199,110,7.34
+Bread & Butter,Loco Hybrid,199,112.05,6.52
+Bread & Butter,Wild thang,189,113.38,5.92
+Bread & Butter,Filth Standard,165,109,7.32
+Bread & Butter,Filth Hybrid,165,112,6.7
+Bread & Butter,Fat Boy,189.99,109,7.19
+Bread & Butter,Shogun,189.99,120,6.18
+Bread & Butter,Filth Elongated,165,121,6.16
+Chorus Pickleball,Echo EX,109,114,6.19
+Chorus Pickleball,Echo HX,109,110,6.42
+Chorus Pickleball,Echo SX,109,107,7.22
+Chorus Pickleball,Supercourt EX,119,114,6.28
+Chorus Pickleball,Supercourt HX,119,113,6.66
+Chorus Pickleball,Supercourt SX,119,109,7.22
+Chorus Pickleball,Fire EX,169.99,113,6.09
+Chorus Pickleball,Fire HX,169.99,110,6.33
+Chorus Pickleball,Fire SX,169.99,106,6.96
+Chorus Pickleball,Shapeshifter EX,174.99,115,6.07
+Chorus Pickleball,Shapeshifter HX,174.99,112,6.21
+Chorus Pickleball,Shapeshifter SX,174.99,109,6.96
+Chorus Pickleball,Shapeshifter (old aero head),189.99,119,6.91
+CRBN,Waves 2,280,112.52,6.83
+CRBN,Waves 4,280,111.28,6.48
+CRBN,Waves 3,280,119.49,6.53
+CRBN,Waves 1,280,118.62,5.66
+CRBN,CRBN4 TruFoam Genesis,280,111,6.28
+CRBN,CRBN3 TruFoam Genesis,279.99,125,6.38
+CRBN,CRBN2 TruFoam Genesis,279.99,112,6.68
+CRBN,CRBN1 TruFoam Genesis,279.99,117,5.4
+CRBN,CRBN2 13mm,179.99,102,6.45
+CRBN,CRBN2 14mm,179.99,108,6.77
+CRBN,CRBN1 13mm,179.99,118,5.46
+CRBN,CRBN1 14mm,179.99,120,5.67
+CRBN,CRBN3X 14mm,229.99,112,6.1
+CRBN,CRBN3X 16mm,229.99,118,6.52
+CRBN,CRBN1 16mm,179.99,122,6.02
+CRBN,CRBN2X 14mm,229.99,103,6.85
+CRBN,CRBN2X 16mm,229.99,109,7.57
+CRBN,CRBN1X 14mm,229.99,117,5.9
+CRBN,CRBN1X 16mm,229.99,123,6.45
+CRBN,CRBN2 16mm,179.99,108,7.1
+Crush,Force 5G,199.99,113,6.86
+Diadem,BluCore Max 16mm,279.99,104,7.25
+Diadem,BluCore Pro 19mm,279.99,117,6.03
+Diadem,Icon Infinity Max,219.95,109,7.21
+Diadem,Edge 18k Max,229.95,110,7.51
+Diadem,Edge 18k Max Power,239.95,108,7.61
+Diadem,Edge 18k,229.99,117,6.17
+Diadem,Edge 18k Pro Power,229.99,121,6.35
+Diadem,Warrior v2,229.95,116,
+Diadem,Icon v2,199.99,122,5.72
+Diadem,Warrior Edge,174.95,120.0,6.48
+Diadem,Warrior,189.95,127,
+Diadem,Icon v1,159.95,107.0,5.89
+Electrum,Pro Stealth,219.99,87,5.38
+Electrum,Model E Stealth,219.99,112,5.39
+Electrum,Pro II Stealth,219.99,95,5.09
+Electrum,Model E Elite,199.99,122,7.04
+Electrum,Model E 13mm,159.99,111,5.87
+Electrum,Model E 16mm,179.99,117,6.33
+Electrum,Pro II,199.99,123,7.25
+Engage,Pursuit Pro1 Widebody,259.99,,
+Engage,Pursuit Pro1 Hybrid,259.99,103,5.78
+Engage,Pursuit Pro Innovation 15.2mm,279.99,125,6.29
+Engage,Pursuit Pro Innovation 12.7mm,279.99,125,5.93
+Engage,Pursuit v2.0,179.99,113,6.32
+Engage,Evolution Aero,139.99,104,5.8
+Engage,Encore Pro v2 12.7,99.99,106,5.79
+Engage,Encore Pro v2 15.2,99.99,105,6
+Engage,Pursuit Pro1 (Lite),259.99,107,5.52
+Engage,Pursuit Pro1 (Mid weight),259.99,110,5.66
+Engage,Pursuit Pro1 6.0 (Lite),259.99,112,5.73
+Engage,Pursuit Pro1 6.0 (Mid weight),259.99,113,5.83
+Engage,Extreme v2.14,159.99,115,6.27
+Engage,Extreme v2.16,159.99,125,6.88
+Engage,Pursuit Maxx EX 6.0,199.99,117,7.69
+Engage,Pursuit Maxx MX 6.0,199.99,125,6.49
+Engage,Pursuit Pro MX 6.0,259.99,123,6.64
+Engage,Pursuit Pro MX,259.99,121,6.15
+Engage,Pursuit Pro EX 6.0,259.99,114,7.19
+Engage,Pursuit Pro EX,259.99,107,6.64
+Franklin,C45 Dynasty 14mm,229,112.13,5.74
+Franklin,C45 Tempo 14mm,229,98.28,6.36
+Franklin,C45 Tempo 16mm,229,100.45,6.37
+Franklin,C45 Dynasty 16mm,229,115.45,5.92
+Franklin,C45 14mm,229.99,104,5.42
+Franklin,FS Tour Dynasty 12mm,149.99,104,5.57
+Franklin,FS Tour Tempo 12mm,149.99,98,5.93
+Franklin,FS Tour Tempo 14mm,149.99,114,7.15
+Franklin,FS Tour Tempo 16mm,149.99,115,7.04
+Franklin,FS Tour Dynasty 14mm,149.99,121,6.45
+Franklin,FS Tour Dynasty 16mm,149.99,134,6.88
+Franklin,Signature Carbon STK 17mm,149.99,120,6.6
+Franklin,Signature Carbon STK 14.5mm,149.99,113,5.87
+Friday Pickle,Fever,129,110,5.84
+Friday Pickle,Challenger,89,122,6.38
+Friday Pickle,Original,99,116,6.29
+Gamma,Airbender 16,199.99,112,5.51
+Gamma,Obsidian 16mm,159.99,120,6.46
+Gamma,Obsidian 13mm,159.99,115,6.05
+Gamma,Obsidian 10mm,159.99,114,5.79
+Gearbox,GX2 Power Elongated,280,117,5.89
+Gearbox,GX2 Power Hybrid,280,111,6.42
+Gearbox,GX2 Hyper,269.95,109,6.27
+Gearbox,GX2 Integra XL,269.95,116,5.53
+Gearbox,GX2 Elongated,269.95,119,5.55
+Gearbox,Pro Ultimate Hyper,274.99,113,6.32
+Gearbox,Pro Ultimate Elongated,274.99,124,5.43
+Gearbox,G2 Elongated,119.99,120,5.41
+Gearbox,G2 Quad,139.99,104,6.11
+Gearbox,G2 Integra,139.99,113,5.54
+Gearbox,Pro Control Fusion,274.99,112,5.06
+Gearbox,Pro Power Fusion,274.99,110,4.96
+Gearbox,Pro Control Elongated,274.99,120,4.86
+Gearbox,Pro Power Elongated,274.99,119,5.02
+Gearbox,CX14E Ultimate,249.99,119,5.12
+Gearbox,CX14H Ultimate,249.99,109,5.75
+Gearbox,GBX,199.99,122,6.33
+Gearbox,CX14E,199.99,101,4.29
+Gearbox,CX14H,199.99,91,5.16
+Gearbox,CX11E Power 7.8oz,199.99,98,4.69
+Gearbox,CX11Q Power 7.8oz,199.99,91,5.15
+Gearbox,CX11E Power 8.5oz,199.99,111,4.96
+Gearbox,CX11Q Control 7.8oz,199.99,93,5.35
+Gearbox,CX11Q Control 8.5oz,199.99,100,5.5
+Gearbox,CX11E Control 7.8oz,199.99,102,4.65
+Gearbox,CX11E Control 8.5oz,199.99,113,4.97
+Gearbox,CX11Q Power 8.5oz,199.99,99,5.69
+GRUVN,LAZR-16HD,179,118.11,6.83
+GRUVN,LAZR-16X,169,117,6.33
+GRUVN,LAZR-16HD,169,111,6.49
+GRUVN,MUVN 16V,159,104,7.61
+GRUVN,MUVN 16H,159,119,6.07
+GRUVN,MUVN 16E,159,118,6.68
+GRUVN,MUVN 16S,159,103,7.06
+GRUVN,MUVN 13S,159,99,6.45
+GRUVN,MUVN 16X,159,117,6.36
+GRUVN,16E,99,113,6.38
+Gruvn,16H,99,120,5.82
+Gryp,Balance 1,200,113,5.93
+Head,Boom Team EX 2024,99.95,115,5.55
+Head,Boom Tour EX 2024,199.95,114,5.25
+Head,Radical Nite,219.95,116,5.85
+Holbrook,Arma S Metalic,279.99,114,7.11
+Holbrook,Arma T Carbon,259.99,120,6.3
+Holbrook,Arma X Metalic,279.99,115,6.17
+Holbrook,Arma T Metalic,279.99,119,6.15
+Holbrook,Arma S Carbon,259.99,110,6.91
+Holbrook,Aero X 16mm,199.99,111,5.94
+Holbrook,Aero T 16mm,199.99,113,5.73
+Holbrook,Power Pro E 14mm,219.99,119,6.37
+Holbrook,Power Pro E 16mm,219.99,117,6.44
+Holbrook,Power Pro 12mm,219.99,117,5.81
+Holbrook,Power Pro 14mm,219.99,120,6.13
+Holbrook,Power Pro 16mm,219.99,120,6.23
+Honolulu Pickleball,J3NF,195,109.87,6.52
+Honolulu Pickleball,J7NF,195,115.12,5.71
+Honolulu Pickleball,J2NF LH,195,109.47,6.4
+Honolulu Pickleball,J2NF,195,110.56,6.68
+Honolulu Pickleball,J2NFK,195,111.75,6.84
+Honolulu Pickleball,J2NF,195,110.06,6.75
+Honolulu Pickleball,J2NFT,195,112.85,6.78
+Honolulu Pickleball,J2H+,,111,6.85
+Honolulu Pickleball,J4K Pro,165,104,7.92
+Honolulu Pickleball,J2XK,,112,6.27
+Honolulu Pickleball,J4K,155,107,8.18
+Honolulu Pickleball,J3 Ti,155,114,6.98
+Honolulu Pickleball,J2K+,,114,7
+Honolulu Pickleball,J2 Ti+,,114,7.04
+Honolulu Pickleball,J2K 14mm,165,113,6.67
+Honolulu Pickleball,J2 Ti,155,114,6.87
+Honolulu Pickleball,J5,165,128,6.14
+Honolulu Pickleball,J2H,145,113,7.13
+Honolulu Pickleball,J3,145,113,7.15
+Honolulu Pickleball,J7K Pro,165,120,6.34
+Honolulu Pickleball,J7K,155,121,6.39
+Honolulu Pickleball,J3K Pro,165,111,6.95
+Honolulu Pickleball,J3K ,155,117,7.28
+Honolulu Pickleball,J2K Pro,165,113,6.91
+Honolulu Pickleball,J2K 16mm,155,113,6.95
+Honolulu Pickleball,J1H,185,120,6.54
+Honolulu Pickleball,J1,185,117,6.65
+Honolulu Pickleball,J2,145,113,6.82
+Hudef,Viva Pro Gen 2,,124,6.45
+Hudef,Apex Pro 14mm,89,103,6.56
+Hudef,Apex Pro 16mm,89,112,6.92
+Hudef,Viva Pro 14mm,99,117,6.5
+Hudef,Viva Pro 16mm,99,120,6.81
+Joola,Hyperion Pro IV 16mm,279.95,114,6.11
+Joola,Magnus Pro IV 16mm,279.95,115,6.19
+Joola,Magnus Pro IV 14mm,279.95,110,5.94
+Joola,Scorpeus Pro IV 16mm,279.95,112,7.11
+Joola,Scorpeus Pro IV 14mm,279.95,111,7.12
+Joola,Agassi Pro IV 16mm,279.95,117,6.17
+Joola,Perseus Pro IV 14mm,279.95,113,5.9
+Joola,Perseus Pro IV 16mm,279.95,118,6.14
+Joola,Hyperion 3S 14mm,279.95,113,5.9
+Joola,Scorpeus 3S 14mm,279.95,108,6.64
+Joola,Scorpeus 3S 16mm,279.95,115,7.2
+Joola,Hyperion 3S 16mm,279.95,117,6.13
+Joola,Magnus 3S 14mm,279.95,117,6.15
+Joola,Magnus 3S 16mm,279.95,114,6.51
+Joola,Perseus 3S 14mm,279.95,119,6.03
+Joola,Perseus 3S 16mm,279.95,119,6.32
+Joola,Mod TA-15 14mm,279.95,114,5.82
+Joola,Mod TA-15 16mm,279.95,118,6.15
+Joola,Hyperion3 14mm,279.99,113,5.78
+Joola,Hyperion3 16mm,279.99,117,6.09
+Joola,Magnus3 14mm,279.99,113,6.15
+Joola,Magnus3 16mm,279.99,120,6.36
+Joola,Perseus3 14mm,279.99,115,5.83
+Joola,Perseus3 16mm,279.99,117,6.08
+Joola,Scorpeus3 14mm,279.99,109,6.73
+Joola,Scorpeus3 16mm,279.99,111,6.99
+Joola,Solaire 14mm Swift,189.95,109,6.53
+Joola,Scorpeus Anna Bright 14mm,249.99,111,6.5
+Joola,Scorpeus Collin Johns 16mm,249.99,112,6.83
+Joola,Perseus 14mm,249.99,112,5.72
+Joola,Perseus 16mm,249.99,116,5.87
+Joola,Hyperion CFS 14mm Swift,219.95,112,5.82
+Joola,Hyperion CFS Swift 16mm,219.95,113,6.18
+Joola,Hyperion CFS 14mm,219.95,113,5.74
+Joola,Solaire 14mm,189.95,119.0,
+Joola,Hyperion CFS 16mm,219.99,127,6.71
+Joola,Radius,179.95,98,
+Joola,Vision 14mm,169.95,109.0,5.23
+Joola,Hyperion CAS 13.5,159.95,117,5.9
+Joola,Vision 16mm,169.95,113.0,5.6
+Joola,Hyperion CAS 16,159.95,124,6.46
+Kiwi Labs,Slice,145,116,6.46
+Legacy,Pro S,149.99,114,
+Mark Pickleball,Mark Two,159.99,120,6.57
+Mark Pickleball,Mark One,159.99,117,6.51
+Mark Pickleball,Mark OneX,159.99,116,6.57
+Neonic,Flow Swift,,114,6.3
+Neonic,Flow Prime X,129.99,110,6.13
+Neonic,Flare Prime X,139.99,106,6.64
+Neonic,Flare Ti,149.99,114,7.01
+Neonic,Flow,129.99,116,6.61
+Neonic,Force,99.99,117,6.61
+Nexus,ProStar,169.99,124,6.34
+Omega,Evolution Pro,129.99,130,6.6
+Omega,Evolution Elite,149.99,93,4.86
+Omega,Evolution Max,109.99,111.0,6.46
+Onix,Malice 14,249.99,104,5.98
+Onix,Malice DB 16,249.99,100,5.85
+Onix,Mayhem Max Control,209.99,118,8.34
+Onix,Z5,89.99,101,7.31
+Onix,Premier,149.99,115,7.28
+Oya,Obsidian,169.99,111,5.74
+Oya,Phantom,169.99,123,6.45
+Oya,Phantom Max,169.99,123,5.47
+Oya,Obsidian Max,169.99,111,4.74
+Paddletek,Bantam GTO-C 14.3mm,250,115.74,6.72
+Paddletek,Bantam GTO-C 12.7mm,250,117.93,7.42
+Paddletek,Bantam ESQ-C 14.3mm,249.99,106,6.8
+Paddletek,Bantam ESQ-C 12.7mm,249.99,103,6.7
+Paddletek,Bantam TKO-CX 12.7mm,249.99,121,7.11
+Paddletek,Bantam TKO-CX 14.3mm,249.99,122,7.1
+Paddletek,Bantam TKO-C 12.7mm,249.99,112,6.27
+Paddletek,Bantam TKO-C 14.3mm,249.99,118,6.6
+Paddletek,Bantam ALW-C 12.7mm,249.99,102,6.53
+Paddletek,Bantam ALW-C 14.3mm,249.99,103,6.56
+Paddletek,Reign v3,199.99,110,5.78
+Paddletek,Reign Pro v3,209.99,114,5.52
+Paddletek,Wave v3,199.99,110,6.87
+Paddletek,Wave Pro v3,209.99,105,6.25
+Paddletek,TS-5,99.99,103,6.68
+Pickleball Apes,Charm x,199,123.4,6.13
+Pickleball Apes,Charm v,199,111.93,7.19
+Pickleball Apes,Charm s,199,116.33,6.16
+Pickleball Apes,Harmony S,179,112.3,6.06
+Pickleball Apes,Harmony V,179,106.69,7
+Pickleball Apes,Harmony X,179,120.77,5.97
+Pickleball Apes,Pulse X,199.99,122,6.16
+Pickleball Apes,Pulse E,199.99,124,5.79
+Pickleball Apes,Pulse S,199.99,113,6.27
+Pickleball Apes,Pulse V,199.99,110,7.34
+Pickleball Apes,Pro Line Energy S,169.99,118,6.34
+Pickleball Apes,Neo Line One,69.99,117,6.04
+Pickleball Apes,Pro Line Energy,149.99,120,5.66
+Pickleball Poker,The Bet,75.99,123,5.48
+PIKKL,Hurricane Pro 14mm,159.99,106,6.52
+PIKKL,Hurricane Pro 16mm,159.99,108,6.71
+PIKKL,Vantage Pro 14mm,139,114,6.3
+PIKKL,Vantage Pro 16mm,139,120,6.75
+Pro Kennex,Black Ace LG 14mm,280,106,5.34
+Pro Kennex,Black Ace 14mm,280,100,6.33
+Pro Kennex,Black Ace 16mm,280,105,6.22
+Pro Kennex,Black Ace XF 14mm,280,102,5.29
+Pro Kennex,Black Ace LG Daniel de la Rosa,249.99,107,5.42
+Pro Kennex,Black Ace Pro,249.99,100,6.25
+Pro Kennex,Black Ace Pro Ovation,249.99,101,5.92
+Pro Kennex,Pro Speed II,169.95,,
+Pro Kennex,Pro Flight,189.95,89,5.36
+ProDrive,Maverick,265,114,5.76
+ProDrive,Encounter,219,116,5.45
+ProDrive,Ghost,189,114,6.59
+ProDrive,Drive Carbon,199,132,7.56
+ProDrive,Drive,199,130,7.26
+Professor,PhD,99.99,119,5.95
+Proton,Series 1 Type A Square 11mm,280,118,6.95
+ProXR,Signature 16mm 2024,209.99,121,6.1
+ProXR,Zane Signature Carbon 13mm 2024,209.99,116,5.6
+ProXR,The Standard 16mm 2024,209.99,116,7.4
+ProXR,The Standard 13mm 2024,209.99,115,7
+Reload,RLD 1-16,200,122,6.2
+Rokne,Aeroblade,299.99,133,5.71
+Rokne,Curve Classic,89.99,123,
+Rokne, X,179.99,109,
+Ronbus,Quanta R1,119.99,107.34,5.52
+Ronbus,Quanta R3,119.99,111.27,5.52
+Ronbus,Quanta R2,119.99,101.64,6.16
+Ronbus,Quanta R4,119.99,105.48,5.76
+Ronbus,Quanta R5,119.99,103.62,6.13
+Ronbus,Ripple v2 R5,280,113.2,6.12
+Ronbus,Ripple R2.14 v2,279.99,118,6.53
+Ronbus,Ripple R1.14 v2,279.99,126,5.66
+Ronbus,Ripple R4.14 v2,279.99,117,5.73
+Ronbus,Ripple R1.14 beta,260,114,5.52
+Ronbus,Pulsar FX3,180,123,6.29
+Ronbus,Pulsar FX2,180,112,7.05
+Ronbus,Pulsar FX1,180,119,6.29
+Ronbus,Nova.R3,180,121,6.08
+Ronbus,Nova.R1,180,114,5.81
+Ronbus,R1 Pulsar (5.5” handle),169.99,117,6.22
+Ronbus,R3 Pulsar,169.99,124,6.39
+Ronbus,R1 Pulsar (5.25” handle),169.99,113,6.19
+Ronbus,R1.16,120,117,6.19
+Selkirk,Boomstik elongated,333,118.15,6.91
+Selkirk,Boomstik widebody,333,113,8.21
+Selkirk,Boomstik elongated,333,118.15,6.91
+Selkirk,Vanguard Invikta Control Lightweight,199.99,104,5.3
+Selkirk,Vanguard Invikta Control Midweight,199.99,114,5.81
+Selkirk,Vanguard Epic Control,199.99,110,6.21
+Selkirk,Vanguard S2 Control,199.99,105,6.98
+Selkirk,Luxx Control Air S2,249.99,109,7.11
+Selkirk,Luxx Contral Air Epic,249.99,113,6.33
+Selkirk,Luxx Control Air Invikta,249.99,114,5.83
+Selkirk,Vanguard Power Air Invikta,249.99,112,5.58
+Selkirk Labs,Project 008 Invikta 16mm,288,111,5.66
+Selkirk Labs,Project 008 Invikta 10mm,288,109,5.18
+Selkirk Labs,Project 008 Epic 13mm,288,103,5.33
+Selkirk Labs,Project 008 Invikta 13mm,288,107,5.86
+Selkirk Labs,Project 008 Tour 13mm,288,114,5.33
+Selkirk Labs,Project 008 Tour 16mm,288,116,5.5
+Selkirk Labs,Project 007 Epic 14mm,333,111,6.32
+Selkirk Labs,Project 007 Invikta 10mm,333,107,5.21
+Selkirk Labs,Project 007 Invikta 14mm,333,122,6.08
+Selkirk Labs,Project 005 Epic,222,107,6.67
+Selkirk Labs,Project 005 Invikta,222,120,6.13
+Selkirk Labs,Project 006 Tour,333,117,5.89
+Selkirk Labs,Project 003 Invikta,333,105,5.44
+Selkirk Labs,Project 001 Epic,333,103.0,
+Selkirk Labs,Project 001 Invikta,333,,
+Selkirk Labs,Project 002 Invikta,333,113.0,
+Selkirk Labs,Project 003 Epic,333,98,
 SixZero,Coral hybrid,200,112.05,6.37
 SixZero,Black Opal,250,113.4,6.07
 SixZero,Coral widebody,200,108.3,7.13
 SixZero,Coral elongated,200,113.47,5.77
-Pickleball Apes,Charm x,199,123.4,6.13
-Pickleball Apes,Charm v,199,111.93,7.19
-Pickleball Apes,Charm s,199,116.33,6.16
-Adidas,Adipower pro 14,189,123,6.38
-Adidas,Adipower pro 16 c,189,118.69,7.01
-Adidas,Adipower pro 16,189,126.21,6.22
+SixZero,Quartz,99.99,108,6.67
+SixZero,Ruby 14mm,199,116,6.59
+SixZero,Triple Black Diamond,220,125,6.11
+SixZero,Black Diamond Infinity,220,108,5.67
+SixZero,Ruby 16mm,199,117,6.68
+SixZero,Double Black Diamond Infinity ,220,110,5.9
+SixZero,Sapphire,86,108,5.5
+SixZero,Double Black Diamond 14mm ,180,110,6.28
+SixZero,Double Black Diamond 16mm,180,114,6.59
+SixZero,Black Diamond 16mm,180,116,6.65
+SLK,ERA Power Widebody,199,108,6.87
+SLK,ERA Power Elongated,199,116,6.17
+SLK,Halo Pro XL 14mm,150,124,5.89
+SLK,Halo Pro Max 14mm,150,111,7.1
+SLK,Halo Power XL 13mm,130,117,5.79
+SLK,Halo Control XL 16mm,130,114,5.44
+SLK,EVO 2.0 Hybrid XL,99.99,107,5.4
+SLK,EVO 2.0 Power XL,99.99,111,6.36
+SLK,EVO 2.0 Control XL,99.99,109,5.59
+SLK,Omega Max,139.99,103,6.2
+SLK,Evo Soft Max,119.99,105.0,
+Spartus,P1,219,117.09,6.51
+Spartus,Oracle Apex,94.95,106,6.83
+Spartus,Odyssey Apex,94.95,108,6.39
+Spartus,Orion Apex,94.95,111,5.91
+Spartus,Olympus,199.99,113,6.24
+Spartus,Apollo,129.99,107,7.48
+Spartus,Gladius Centurion,99.99,118,5.93
+Spartus,Gladius 16,84.99,125,6.19
+Spartus,Ballista,159.99,110,5.66
+Speed Up,Ice 16mm,119.99,121,6.03
+Speed Up,Fire 14mm,119.99,114,5.78
+Technifibre,TF Blitz,199,121,5.7
+Technifibre,TF Select 15mm,219,115,6.59
+Technifibre,TF Command 15mm,209,109,6.78
+Thompson,515 Twill,249.99,116,6.78
+Thompson,515 Uni,249.99,108,6.53
+Thrive,Smoke,220,117,6.07
+Thrive,Surge,199,117,6.77
+Thrive,AZUL,199,116,6.62
 Vatic Pro,V-sol Power v7 LH,109.99,119.19,6.1
 Vatic Pro,V-sol Power Flash,109.99,110.57,6.18
 Vatic Pro,V-sol Power Bloom,109.99,108.13,6.86
@@ -27,25 +452,48 @@ Vatic Pro,V-sol Power v7,109.99,117.54,6.53
 Vatic Pro,V-sol pro Flash,109.99,106.69,6.08
 Vatic Pro,V-sol Pro v7 LH,109.99,114.11,5.97
 Vatic Pro,V-sol Pro v7 ,109.99,113.8,6.32
-CRBN,Waves 2,280,112.52,6.83
-CRBN,Waves 4,280,111.28,6.48
-CRBN,Waves 3,280,119.49,6.53
-CRBN,Waves 1,280,118.62,5.66
-Bread & Butter,Loco Widebody,199,110,7.34
-Ronbus,Quanta R1,119.99,107.34,5.52
-Ronbus,Quanta R3,119.99,111.27,5.52
-Ronbus,Quanta R2,119.99,101.64,6.16
-Ronbus,Quanta R4,119.99,105.48,5.76
-Bread & Butter,Loco Hybrid,199,112.05,6.52
-Ronbus,Quanta R5,119.99,103.62,6.13
-Bread & Butter,Loco Widebody,199,110,7.34
-Bread & Butter,Loco Hybrid,199,112.05,6.52
-Honolulu Pickleball,J3NF,195,109.87,6.52
-Honolulu Pickleball,J7NF,195,115.12,5.71
-Honolulu Pickleball,J2NF LH,195,109.47,6.4
-Honolulu Pickleball,J2NF,195,110.56,6.68
-Selkirk,Boomstik elongated,333,118.15,6.91
-Selkirk,Boomstik widebody,333,113,8.21
-Selkirk,Boomstik elongated,333,118.15,6.91
-GRUVN,LAZR-16HD,179,118.11,6.83
-Bread & Butter,Wild thang,189,113.38,5.92
+Vatic Pro,Saga v7 SH 14mm,129.99,117,6.2
+Vatic Pro,Saga Flash LH 14mm,129.99,113,5.7
+Vatic Pro,Saga Flash SH 14mm,129.99,109,5.96
+Vatic Pro,Saga Bloom 14mm,129.99,105,6.51
+Vatic Pro,Saga v7 LH 14mm,129.99,117,5.63
+Vatic Pro,Prism Bloom 16mm,99.99,110,6.97
+Vatic Pro,Prism Bloom 14mm,99.99,107,6.54
+Vatic Pro,Saga Bloom 16mm,129.99,111,6.96
+Vatic Pro,Saga v7 LH 16mm,129.99,124,6.39
+Vatic Pro,Saga v7 SH 16mm,129.99,119,6.58
+Vatic Pro,Saga Flash LH 16mm,129.99,120,6.1
+Vatic Pro,Saga Flash SH 16mm,129.99,113,6.48
+Vatic Pro,Prism Flash 16mm LH,99.99,122,6.21
+Vatic Pro,Prism v7 LH,99.99,123,6.27
+Vatic Pro,Prism Flash 14mm,99.99,110,6.31
+Vatic Pro,Alchemy 16mm,179.99,121,6.38
+Vatic Pro,Alchemy 13.5mm,179.99,113,6.04
+Vatic Pro,Prism Flash 16mm,99.99,114,6.41
+Vatic Pro,Prism v7,99.99,128,6.74
+Vatic Pro,Flash Carbon Fiber 16mm,139.99,115,6.57
+Vatic Pro,V7 Carbon Fiber 16mm,139.99,119,6.78
+Vatic Pro,Flash Carbon Fiber 14mm,139.99,111,6.18
+Versix,Vector XL,129.99,119,6.58
+Volair,Shift HYB 14mm,189.99,118.4,6.49
+Volair,Shift EL 14mm,189.99,120.4,6
+Volair,Shift WB 14mm,189.99,107.7,7.21
+Volair,V.1F XL-W,179.99,114,6.93
+Volair,V.1F HYB,199.99,117,6.45
+Volair,V.1F XL-L,179.99,129,5.48
+Volair,CTRL2 Forza 16mm,199.99,108,7.18
+Volair,CTRL1 Forza 16mm,199.99,114,6.07
+Volair,Mach 2 Forza 14mm,179.99,106,6.82
+Volair,Mach 2 Forza 16mm,179.99,110,7.22
+Volair,Mach 1 14mm,159.99,114,5.87
+Volair,Mach 1 Forza 14mm,179.99,111,5.99
+Volair,Mach 1 Forza 16mm,179.99,117,6.56
+Volair,Mach 1 16mm,159.99,114,6.00
+Vulcan,V720HT MAX,249.99,110,6.72
+Vulcan,V740HT MAX,249.99,122,5.96
+Wilson,Vesper Power 14mm,249,114,5.26
+Wilson,Vesper  Control 17mm,249,114,6.04
+RPM,Friction pro elongated 16,249.99,116.18,6
+RPM,Friction pro widebody 16,249.99,109.77,6.96
+RPM,Friction pro elongated 14,249.99,114.94,5.87
+,Black Diamond 14mm,180,112,6.44
