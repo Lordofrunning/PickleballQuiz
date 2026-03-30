@@ -1,34 +1,99 @@
 import requests
 import csv
+import json
 
-url = "https://thepickleballstudio.notion.site/api/v3/queryCollection"
+url = "https://thepickleballstudio.notion.site/api/v3/queryCollection?src=initial_load"
+
+# Authentication cookies from browser session
+# Get these from: DevTools > Network > queryCollection request > Headers > Cookie
+NOTION_COOKIES = {
+    "notion_browser_id": "a1220f43-7128-4266-ae7b-5a43608f1928",
+    "device_id": "332d872b-594c-81f8-8bd6-003b6bec109f",
+    "notion_check_cookie_consent": "false"
+}
 
 payload = {
-    "collectionId": "3c5f9880-81b2-4ace-b83c-46374c8281c0",
-    "collectionViewId": "15aa3cef-c76a-80b9-b4ba-000c2df1ede5",
-    "loader": {
-        "limit": 1000
-    }
+    "collectionView": {
+        "id": "15aa3cef-c76a-80b9-b4ba-000c2df1ede5",
+        "spaceId": ""
+    },
+    "collectionViewBlock": {
+        "id": "5bdf3ee7-52c9-40eb-a864-a81bc3281164",
+        "spaceId": ""
+    },
+    "clientType": "notion_app",
+    "isFullScreen": True,
+    "isMobile": False,
+    "userTimeZone": "America/Denver"
 }
 
 headers = {
-    "User-Agent": "Mozilla/5.0",
-    "Content-Type": "application/json"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+    "Content-Type": "application/json",
+    "notion-client-version": "23.13.20260330.1621",
+    "origin": "https://thepickleballstudio.notion.site",
+    "referer": "https://thepickleballstudio.notion.site/5bdf3ee752c940eba864a81bc3281164?v=15aa3cefc76a80b9b4ba000c2df1ede5"
 }
 
-print("Fetching paddles...")
+print("Fetching all paddles (with pagination)...")
 
-r = requests.post(url, json=payload, headers=headers)
+all_paddles = []
+all_records = {"block": {}, "__version__": 3}
+offset = 0
+page = 1
 
-data = r.json()
+while True:
+    # Create payload for this page with offset
+    current_payload = payload.copy()
+    current_payload["offset"] = offset
+    
+    print(f"  Fetching page {page} (offset {offset})...")
+    r = requests.post(url, json=current_payload, headers=headers, cookies=NOTION_COOKIES)
+    
+    if r.status_code != 200:
+        print(f"ERROR: Status {r.status_code}")
+        break
+    
+    data = r.json()
+    
+    if "recordMap" not in data or "block" not in data["recordMap"]:
+        print(f"ERROR: No data on page {page}")
+        break
+    
+    # Merge records
+    all_records["block"].update(data["recordMap"]["block"])
+    
+    # Get block IDs for this page
+    block_ids = []
+    if "result" in data and "reducerResults" in data["result"]:
+        reducer_results = data["result"]["reducerResults"]
+        if "collection_group_results" in reducer_results:
+            collection_results = reducer_results["collection_group_results"]
+            block_ids = collection_results.get("blockIds", [])
+            has_more = collection_results.get("hasMore", False)
+            print(f"    Got {len(block_ids)} paddles, hasMore={has_more}")
+    
+    if not has_more or not block_ids:
+        break
+    
+    page += 1
+    offset += 50
+    if page > 15:  # Safety limit (15 * 50 = 750 paddles)
+        print("Reached page limit, stopping")
+        break
 
-blocks = data["recordMap"]["block"]
+records = all_records
 
 paddles = []
 
-for block_id, block in blocks.items():
-
-    value = block.get("value", {})
+# Extract all paddles from all pages
+for block_id in records["block"].keys():
+    if block_id == "__version__":
+        continue
+        
+    block = records["block"][block_id]
+    
+    value = block.get("value", {}).get("value", {})
     props = value.get("properties", {})
 
     if not props:
