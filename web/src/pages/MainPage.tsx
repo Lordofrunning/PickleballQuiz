@@ -29,10 +29,6 @@ const MainPage: React.FC = () => {
       
       <main className="content">
         <div className="hero-card">
-          <div className="card-header">
-            <h2>Find Your Paddle</h2>
-          </div>
-          
           <div className="carousel">
             <img 
               src={carouselImages[currentImageIndex]} 
@@ -40,10 +36,6 @@ const MainPage: React.FC = () => {
               className="carousel-image"
             />
           </div>
-          
-          <button className="btn btn-primary btn-full" onClick={handleStartQuiz}>
-            Start Quiz
-          </button>
         </div>
       </main>
 
