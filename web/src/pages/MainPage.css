@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #ffffff;
 }
 
 .header {
   text-align: center;
   color: white;
   padding: 3rem 1rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #1e40af 0%, #93c5fd 100%);
 }
 
 .header h1 {
@@ -35,34 +35,69 @@
   gap: 2rem;
 }
 
-.welcome-section {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  text-align: center;
+.hero-card {
+  background: rgba(128, 128, 128, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   max-width: 600px;
   width: 100%;
-}
-
-.welcome-section h2 {
-  color: #333;
-  margin-top: 0;
-  font-size: 2rem;
-}
-
-.welcome-section p {
-  color: #666;
-  font-size: 1.1rem;
-  margin: 1rem 0;
-}
-
-.button-group {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  position: relative;
+  min-height: 500px;
+}
+
+.card-header {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+.card-header h2 {
+  margin: 0;
+  color: #1e40af;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: 0;
+  background: #f0f9ff;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .btn {
@@ -82,7 +117,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
   color: white;
 }
 
@@ -92,12 +127,24 @@
 
 .btn-secondary {
   background: white;
-  color: #667eea;
-  border: 2px solid #667eea;
+  color: #1e40af;
+  border: 2px solid #1e40af;
 }
 
 .btn-secondary:hover {
-  background: #f0f0f0;
+  background: #f0f9ff;
+}
+
+.btn-full {
+  width: calc(100% - 3rem);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  margin: 0;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
 }
 
 .features {
@@ -133,16 +180,66 @@
 }
 
 .footer {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
+  background: #f0f9ff;
+  color: #1f2937;
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
   margin-top: auto;
+  border-top: 1px solid #e0e7ff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .footer p {
   margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #e0e7ff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-icon:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.footer a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #3b82f6;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -150,19 +247,25 @@
     font-size: 2rem;
   }
 
-  .welcome-section {
+  .hero-card {
     padding: 1.5rem;
   }
 
-  .button-group {
-    flex-direction: column;
+  .card-header h2 {
+    font-size: 1.5rem;
   }
 
-  .btn {
-    width: 100%;
+  .carousel {
+    min-height: 200px;
+  }
+
+  .btn-full {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
   }
 
   .features {
     grid-template-columns: 1fr;
   }
 }
+
