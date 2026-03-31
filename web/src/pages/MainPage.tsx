@@ -22,7 +22,16 @@ const MainPage: React.FC = () => {
   };
 
   return (
-    <div className="main-page">
+    <div 
+      className="main-page"
+      style={{
+        backgroundImage: "url('/Images/CourtBG.png')",
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center bottom',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       <header className="header">
         <h1>Find the best paddle for your playstyle!</h1>
       </header>
@@ -36,6 +45,8 @@ const MainPage: React.FC = () => {
               className="carousel-image"
             />
           </div>
+        </div>
+        <div className="menu-card">
         </div>
       </main>
 
